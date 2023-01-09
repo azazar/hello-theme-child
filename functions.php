@@ -19,5 +19,7 @@ function hello_elementor_child_enqueue_scripts() {
 		],
 		'1.0.0'
 	);
+
+	wp_enqueue_script('custom', 'https://unpkg.com/freezeframe/dist/freezeframe.min.js');
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
